@@ -1,0 +1,33 @@
+{
+  "name": "ai-hub",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./bin/index.js",
+  "type": "module",
+  "bin": {
+    "ai": "./bin/index.js"
+  },
+  "scripts": {
+    "build": "babel source --out-dir dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "execa": "^9.6.1",
+    "gradient-string": "^3.0.0",
+    "import-jsx": "^5.0.0",
+    "ink": "^6.5.1",
+    "ink-big-text": "^2.0.0",
+    "prop-types": "^15.8.1",
+    "react": "^19.2.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.28.3",
+    "@babel/core": "^7.28.5",
+    "@babel/preset-react": "^7.28.5",
+    "@babel/register": "^7.28.3"
+  }
+}
