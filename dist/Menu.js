@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Text, Box, useInput, useApp } from 'ink';
 import chalk from 'chalk';
 import { execa } from 'execa';
@@ -44,18 +44,7 @@ const Menu = () => {
       exit();
       return;
     }
-
-    // We need to unmount or at least clear the screen to run the child process
-    // But Ink doesn't easily let us "pause". 
-    // The common pattern is to exit the Ink app, run the command, and potentially restart.
-    // For this Hub, we'll exit, run the command, and if the user wants to return, they run 'ai' again.
-    // OR we can try to run it seamlessly. 
-    // Given the constraints of TTY ownership, exiting the Ink app is the safest way 
-    // to ensure the child tool gets full control of the terminal.
-
-    exit(); // Stop the UI
-
-    // We use a small timeout to allow Ink to clean up stdout
+    exit();
     setTimeout(async () => {
       console.clear();
       try {
