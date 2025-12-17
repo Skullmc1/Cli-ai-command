@@ -2,19 +2,16 @@ import React from 'react';
 import { render, Box } from 'ink';
 import Header from './Header.js';
 import Menu from './Menu.js';
-
 const App = () => {
-	return (
-		<Box flexDirection="column" alignItems="center" height="100%">
-			<Box marginTop={1} marginBottom={1}>
-				<Header />
-			</Box>
-			<Menu />
-		</Box>
-	);
+  return /*#__PURE__*/React.createElement(Box, {
+    flexDirection: "column",
+    alignItems: "center",
+    height: "100%"
+  }, /*#__PURE__*/React.createElement(Box, {
+    marginTop: 1,
+    marginBottom: 1
+  }, /*#__PURE__*/React.createElement(Header, null)), /*#__PURE__*/React.createElement(Menu, null));
 };
 
-// Clear console before rendering the app for better visibility
 console.clear();
-
-render(<App />);
+render(/*#__PURE__*/React.createElement(App, null));

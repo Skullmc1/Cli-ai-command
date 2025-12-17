@@ -21,44 +21,16 @@ const Header = () => {
       ),
       React.createElement(Text, { color: "green", bold: true }, "FOR TODAY"),
       React.createElement(
-
-
         Box,
-
-
         { marginTop: 1, flexDirection: "column", justifyContent: "center" },
-
-
         React.createElement(
-
-
           Text,
-
-
           { color: "gray" },
-
-
           "Use wasd/arrow keys to move",
-
-
         ),
-
-
         React.createElement(Text, { color: "gray" }, "And Enter to confirm"),
-
-
       ),
-
-
     ),
-
-
   );
-
 };
-
-
-
-
-
 export default Header;
