@@ -13,5 +13,6 @@ const App = () => {
   }, /*#__PURE__*/React.createElement(Header, null)), /*#__PURE__*/React.createElement(Menu, null));
 };
 
+// Clear console before rendering the app for better visibility
 console.clear();
 render(/*#__PURE__*/React.createElement(App, null));
